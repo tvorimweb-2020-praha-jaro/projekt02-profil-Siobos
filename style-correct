@@ -1,0 +1,110 @@
+html { box-sizing: border-box; }
+*, ::after, ::before { box-sizing: inherit; }
+
+.profil, 
+.obsah,
+.odkazy {
+margin: 0;
+width: 250px;
+}
+
+ /* Boční margin vnořených elementů bych nenastavoval, 
+ způsobuje to pak problémy se správným zarovnání. 
+ Pokud chceme posunout celou kartu od okraje, stačí nastavit 
+ příslušný margin třídě .profil, např: margin: 0 auto, pokud chceme 
+ zarovnat kartu na střed stránky. */
+
+ .foto { 
+box-shadow: 1px 5px 3px #3f464d;
+margin: 0;
+width: 100%;
+}
+
+.hlavicka {
+position: relative; /*U rodiče .hlavicka předtím nebylo nastaveno nastaveno position: relative, to znamená, že logo se nám teď pozicuje vůči celé kartě a nikoliv jen vůči hlavičce.*/
+}
+
+ .logo {
+background: #b92e81;
+border-radius: 50%;
+position: absolute;
+left: 200px;
+top: 150px;
+box-shadow: 5px 5px 5px #000000;
+}
+
+.obsah {
+ padding: 10px 10px;
+ background: #31363b; 
+ color: silver;
+ text-align: left;
+ font-family: 'Source Sans Pro', sans-serif;
+ box-shadow: 1px 1px 3px #3f464d;
+ }
+
+.jmeno {
+font-family: 'Montserrat', sans-serif;
+font-size: 24px;
+color: white;
+}
+
+.odkazy {
+font-family: 'Montserrat', sans-serif;
+border: 1px solid #3f464d;
+margin: 0;
+padding: 0;
+background: #31363b;
+width: 250px; 
+text-align: left;
+text-transform: uppercase;
+box-shadow: 1px 1px 3px #3f464d;
+}
+
+.portfolio {
+display: block;
+text-align: center;
+border-bottom: 1px solid #3f464d;
+border-top: 1px solid #3f464d;
+color: silver;
+}
+
+.facebook,
+.twitter {
+display: inline-block;
+text-align: center;
+width: 50%;
+color: whitesmoke;
+border-right: 1px solid #3f464d;
+}
+
+.odkazy a {
+display: block;
+padding: 10px 20px;
+color: whitesmoke;
+text-decoration: none;
+}
+
+.portfolio a:hover {
+background-color: #e74c3c;
+}
+.facebook a:hover {
+background-color: #3b5998;  
+}
+.twitter a:hover {
+background-color: #1da1f2;
+}
+
+body {
+    background-color: #bdc3c7;
+}
+
+/*
+ BARVY
+ czechitas  #b92e81
+ pozadi     #bdc3c7
+ tmava      #31363b
+ delitka    #3f464d
+ portfolio  #e74c3c
+ facebook   #3b5998
+ twitter    #1da1f2
+*/
